@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root{
+    --darkColor: #151D3B;
+    --redColor: #D82148;
+    --greenColor: #6EBF8B;
+    --whiteColor: #DADBBD;
+
+}
+
+body{
+    background-color: var(--whiteColor);
+}
+.box{
+    width: 600px;
+    margin: auto;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    box-sizing: border-box;
+    background-color:var(--darkColor);
+    border-radius: 1rem;
+}
+
+.box__title{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--greenColor);
+    font-size: 35px;
+
+}
+
+.box__subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    color: var(--redColor);
+}
+
+.msj{
+width:500px;
+height:100px;
+
+}
+
+.box-msj__message{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: var(--whiteColor);
+}
+
+.box__button--btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 10px;
+    font-weight: 900;
+    width: 100px;
+    height: 25px;
+    background-color: var(--greenColor);
+    /* outline: 1px solid var(--whiteColor); */
+    border: 0;
+    margin-bottom: 30px;
+    color: var(--darkColor)
+}
+
+.box__button--btn:hover{
+
+    background-color: #D82148;
+    color: #DADBBD;
+}
+
+
+@media screen and (max-width: 770px) {
+
+    body{
+        min-width: 320px;
+    }
+    .box{
+        width: 420px;
+        margin: 0 auto;
+        height: 400px;
+        margin-top: 50px;
+    }
+    
+    .box__title{
+        font-size: 30px;
+    }
+    
+    .box__subtitle{
+        font-size: 48px;
+    }
+    
+    .msj{
+        width:370px;
+        height:100px;
+    }
+    
+    .box-msj__message{
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+    }
+
+    .box__button--btn{
+        font-size: 15px;
+        width: 85px;
+        height: 22px;
+    }
+    
+}
+
+@media screen and (max-width: 520px) {
+   
+    .box{
+        width: 280px;
+        margin: 0 auto;
+        height: 330px;
+        margin-top: 50px;
+    }
+    
+    .box__title{
+        font-size: 25px;
+    }
+    
+    .box__subtitle{
+        font-size: 40px;
+    }
+    
+    .msj{
+        width:250px;
+        height:100px;
+    }
+    
+    .box-msj__message{
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+    }
+
+    .box__button--btn{
+        font-size: 13.5px;
+        width: 70px;
+        height: 20px;
+    }
+    
+}

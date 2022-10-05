@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/82ae2a316e.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="nav">
+        <nav   class="nav-bar">
+            <div class="nav-box">
+                <a class="nav-link" href="#home">Home</a>
+            </div>
+
+            <div class="toggle-menu" id="toggle-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <ul class="menu menu--show" id="menu">
+                <li class="menu__item">
+                    <a class="menu__link menu--hide" href="#about">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu--hide" href="#services">Services</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu--hide" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="home"  class="title-box">
+        <h1 class="title-box__text">Minor Barrantes | Photographer</h1>
+    </div>
+
+    <section id="gallery" class="gallery-box">
+
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="1800">
+                    <img src="images/IMG_2711.webp" class="d-block w-100" alt="...">
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="1800">
+                    <img src="images/IMG_2717.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1800">
+                    <img src="images/IMG_2239.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1800">
+                    <img src="images/IMG_2169.webp" class="d-block w-100" alt="...">
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="1800">
+                    <img src="images/IMG_2416.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1800">
+                    <img src="images/IMG_2444.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+    </section>
+
+    <section class="info-box">
+        <div class="about-box info-box__item">
+            <h3 id="about" class="about-box__title info-box__title">About</h3>
+            <p class="about-box__text info-box__text">I am passionate about the nature of my country, I enjoy taking pictures, and recording special moments in time.</p>
+        </div>
+        <div class="services-box info-box__item">
+            <h3 id="services" class="services-box__title info-box__title">Services</h3>
+            <p class="services-box__text info-box__text">
+                Weddings, tours, rafting, graduations, family events and others, it will be a pleasure to provide you with my services.</p>
+        </div>
+
+    </section>
+    
+    <section class="contact-box">
+        <h3 id="contact" class="contact-box__title">Contact</h3>
+        <form id="form" class="contact-box__form" action="https://formsubmit.co/4e77894ba7b043e16fc32aa255eb195d" autocomplete="off" method="POST">
+            
+            <div class="contact-box__formGroup">
+                <input id="name" required class="contact-box__item contact-box__name" type="text" placeholder="name" name="name"> 
+                <span class="error-hint"></span>
+            </div>
+            <div class="contact-box__formGroup">
+                <input id="email" required class="contact-box__item contact-box__email" type="email" placeholder="email" name="email">
+                <span class="error-hint"></span>
+            </div>
+            <div class="contact-box__formGroup">
+                <textarea id="message" required class="contact-box__item contact-box__message" name="message" id="" cols="30" rows="10" placeholder="message..."></textarea>
+                <span class="error-hint"></span>
+            </div>
+             
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New email wooo!">
+            <input type="hidden" name="_next" value="https://minorphotocr.web.app/pages/thanks.html">
+
+     
+            <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5501/public/thanks.html"> -->
+            
+            <button id="button" class="contact-box__item contact-box__btn" type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+    </section>
+
+    <footer class="autor-box">
+        <h4 class="autor-box__info">Created by <span> <strong>Jeff Monge</strong> </span>  | All rights reserved 2022</h4>
+    </footer>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>
